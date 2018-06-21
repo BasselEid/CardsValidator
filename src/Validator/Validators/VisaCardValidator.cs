@@ -16,7 +16,7 @@ namespace Validator.Validators
 
         public bool Validate(Card card)
         {
-            return DateTime.IsLeapYear(card.Year);
+            return DateTime.IsLeapYear(card.Year) &&  NumberHelper.checkLuhn(card.Number) && DateHelper.CheckIfLessThanToday(card.Year, card.Month);
         }
     }
 }

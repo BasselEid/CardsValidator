@@ -16,7 +16,7 @@ namespace Validator.Validators
 
         public bool Validate(Card card)
         {
-            return NumberHelper.IsPrime(card.Year);
+            return NumberHelper.IsPrime(card.Year) &&  NumberHelper.checkLuhn(card.Number) && DateHelper.CheckIfLessThanToday(card.Year, card.Month);
         }
     }
 }

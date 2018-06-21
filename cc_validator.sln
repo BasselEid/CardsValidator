@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C3734243-AFF3-4D2C-918D-5960135B60AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cc_validator", "src\Validator\cc_validator.csproj", "{F2856F5C-45EA-46AA-AD3D-C85F730D6FBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cc_validator", "src\Validator\Validator.csproj", "{F2856F5C-45EA-46AA-AD3D-C85F730D6FBF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validator.Tests", "src\Validator.Tests\Validator.Tests.csproj", "{D10BCFCB-B7F9-495C-9B67-4FDA721E2301}"
 EndProject

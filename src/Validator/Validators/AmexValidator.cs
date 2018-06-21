@@ -14,7 +14,7 @@ namespace Validator.Validators
 
         public bool Validate(Card card)
         {
-            return true;
+            return NumberHelper.checkLuhn(card.Number) && DateHelper.CheckIfLessThanToday(card.Year, card.Month);
         }
     }
 }
