@@ -53,11 +53,9 @@ namespace Validator
                 {
                     var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 
-                    Console.WriteLine("here");
 
                     if (!db.Cards.Any())
                     {
-                        Console.WriteLine("NO Cards found");
                         db.Cards.AddRange(new List<Card>
                             {
                                 new Card {

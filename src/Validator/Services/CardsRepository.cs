@@ -1,3 +1,5 @@
+using System;
+using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Validator.Data;
 
@@ -13,9 +15,10 @@ namespace Validator
         }
         public bool Exists(string number)
         {
-            var card = this.db.Cards.FromSql("SP_CardExists @p0", new[] { number });
+            var card = this.db.Cards.FromSql("SP_CardsExists @p0", new[] { number });
 
-            return card != null;
+                    // Console.WriteLine(card.FirstOrDefaultAsync());
+            return card.FirstOrDefault() != null;
         }
     }
 }
